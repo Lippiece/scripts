@@ -7,16 +7,7 @@ jobs:
       - uses: https://github.com/oven-sh/setup-bun@v2
       - run: bun install
       - run: bun run build
-      - name: apt install curl jq make
-        run: |
-          export DEBIAN_FRONTEND=noninteractive
-          apt-get update -qq
-          apt-get -q install -y -qq curl jq make
-      - run: ls -la dist
       - uses: actions/forgejo-release@v2.7.2
         with:
           direction: upload
           release-dir: dist
-          prerelease: true
-          debug: true
-          verbose: true
