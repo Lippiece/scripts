@@ -1,3 +1,10 @@
+//! ==UserScript==
+//! @name        Opinionated hckrnews.com filter
+//! @namespace   Violentmonkey Scripts
+//! @match       https://hckrnews.com/*
+//! @grant       none
+//! ==/UserScript==
+
 const ignorelist = new Set([
   "AI",
   "Amazon",

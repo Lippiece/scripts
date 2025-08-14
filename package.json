@@ -1,15 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "scripts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "bun build --production --outdir dist --entrypoints src/*"
-  },
   "devDependencies": {
     "@types/bun": "latest"
   },
+  "name": "scripts",
   "peerDependencies": {
     "typescript": "^5"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "build": "bun build --production --outdir dist --entrypoints src/* && sed -i 's#//!#//#' dist/*.js"
+  },
+  "type": "module"
 }
