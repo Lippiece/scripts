@@ -20,4 +20,3 @@ jobs:
           prerelease: true
           debug: true
           verbose: true
-          override: true
