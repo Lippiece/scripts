@@ -2,6 +2,7 @@
 
 if string match -r "###" "$(commit-and-tag-version --dry-run)"
     commit-and-tag-version -s
+    and git push --no-verify
     or false
 else
     true
