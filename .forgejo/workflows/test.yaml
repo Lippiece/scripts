@@ -2,8 +2,10 @@ on: [push]
 jobs:
   print-content:
     runs-on: docker
+    container:
+      image: oven/bun:latest
     steps:
       - name: checkout code
         uses: actions/checkout@v4
       - name: list directory contents
-        run: ls -la
+        run: bun run build
