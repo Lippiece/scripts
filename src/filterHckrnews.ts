@@ -34,13 +34,15 @@ const stories    = document.querySelectorAll(".link.story")
 
 for (const link of Array.from(stories)) {
   if (
-    link.closest("li")?.style.display !== "none" &&
-    link instanceof HTMLElement
+    link.closest("li")?.style.display === "none" ||
+    !(link instanceof HTMLElement)
   ) {
-    const text = link.textContent
+    continue
+  }
 
-    if (text && ignorelist.has(text)) {
-      ;(link.closest("li") || link).style.opacity = "0.5"
-    }
+  const text = link.textContent
+
+  if (text && Array.from(ignorelist).some(word => text.includes(word))) {
+    ;(link.closest("li") || link).style.opacity = "0.3"
   }
 }
