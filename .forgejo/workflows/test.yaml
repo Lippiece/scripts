@@ -3,15 +3,21 @@ jobs:
   build:
     runs-on: docker
     steps:
-      - name: checkout code
-        uses: actions/checkout@v4
-      - name: setup bun
-        uses: https://github.com/oven-sh/setup-bun@v2
-      - name: Install dependencies
-        run: bun install
-      - name: build
-        run: bun run build
-      - uses: actions/upload-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: https://github.com/oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun run build
+      - name: apt install curl jq make
+        run: |
+          export DEBIAN_FRONTEND=noninteractive
+          apt-get update -qq
+          apt-get -q install -y -qq curl jq make
+      - run: ls -la dist
+      - uses: actions/forgejo-release@v2.7.2
         with:
-          name: dist
-          path: dist/*
+          direction: upload
+          release-dir: dist
+          prerelease: true
+          debug: true
+          verbose: true
+          override: true
