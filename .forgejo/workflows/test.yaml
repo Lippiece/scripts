@@ -1,7 +1,7 @@
 on: [push]
 jobs:
   print-content:
-    runs-on: docker
+    runs-on: 77a799b64576
     steps:
       - name: checkout code
         uses: actions/checkout@v4
