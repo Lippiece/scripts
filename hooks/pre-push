@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-if string match -r "###" "$(commit-and-tag-version --dry-run)"
+if string match -qr "###" "$(commit-and-tag-version --dry-run)"
     commit-and-tag-version -s
     and git push --no-verify
     or false
