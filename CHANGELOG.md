@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.0.3...v1.1.0) (2025-08-15)
+
+
+### Features
+
+* **filterHckrnews:** update filter and add mutation observer ([7b052ae](https://lipgit.ydns.eu/lippiece/scripts/commit/7b052aecdee3326959f64234186ac610a5b48251))
+
 ## [1.0.3](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.0.2...v1.0.3) (2025-08-14)
 
 
