@@ -10,12 +10,14 @@ const ignorelist = new Set([
   "Amazon",
   "Apple",
   "Biden",
+  "Court",
   "Elon",
   "Facebook",
   "Google",
   "IBM",
   "Intel",
   "Kanye",
+  "LLM",
   "Meta",
   "Microsoft",
   "Musk",
@@ -46,3 +48,26 @@ for (const link of Array.from(stories)) {
     ;(link.closest("li") || link).style.opacity = "0.3"
   }
 }
+
+// Ugly.
+const observer = new MutationObserver(mutations => {
+  for (const mutation of mutations) {
+    for (const node of Array.from(mutation.addedNodes)) {
+      if (
+        node instanceof HTMLElement &&
+        node.matches(".link.story") &&
+        node.closest("li")?.style.display !== "none"
+      ) {
+        const text = node.textContent
+
+        if (text && Array.from(ignorelist).some(word => text.includes(word))) {
+          ;(node.closest("li") || node).style.opacity = "0.3"
+        }
+      }
+    }
+  }
+})
+
+const entries = document.querySelector("#entries")
+
+entries && observer.observe(entries, { childList: true, subtree: true })
