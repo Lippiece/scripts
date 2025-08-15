@@ -3,6 +3,7 @@
 //! @namespace   Violentmonkey Scripts
 //! @match       https://hckrnews.com/*
 //! @grant       none
+//! @version     v1.0.3
 //! ==/UserScript==
 
 const ignorelist = new Set([

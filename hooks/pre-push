@@ -1,8 +1,18 @@
 #!/usr/bin/env fish
 
+function bumpScripts
+    set -l tag $(git tag | sort -V | tail -n 1)
+
+    sed -i "s#(?<=\@version.....).+#$tag#" src/*.ts
+
+    and git commit --amend --no-edit
+
+    or false
+end
+
 if string match -qr "###" "$(commit-and-tag-version --dry-run)"
     commit-and-tag-version -s
-    and git push --no-verify
+    and bumpScripts
     or false
 else
     true
