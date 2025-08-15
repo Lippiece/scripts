@@ -13,6 +13,7 @@ end
 if string match -qr "###" "$(commit-and-tag-version --dry-run)"
     commit-and-tag-version -s
     and bumpScripts
+    and git push --follow-tags
     or false
 else
     true
