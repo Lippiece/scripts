@@ -5,7 +5,7 @@
     "allowJs"                           : true,
     "composite"                         : true,
     "incremental"                       : true,
-    "lib"                               : ["ESNext", "DOM"],
+    "lib"                               : ["ESNext", "DOM", "DOM.Iterable"],
     "module"                            : "Preserve",
     "moduleDetection"                   : "force",
     "moduleResolution"                  : "bundler",
