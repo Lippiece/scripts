@@ -1,20 +1,17 @@
 #!/usr/bin/env fish
 
-function bumpScripts
-    set -l tag $(git tag | sort -V | tail -n 1)
-
-    sed -i "s#(?<=\@version.....).+#$tag#" src/*.ts
-
-    and git commit --amend --no-edit
-
-    or false
+function bumpScripts --argument versionName
+    sed -E -i "s#@version.+#@version     $versionName#" src/*.ts
 end
 
-if string match -qr "###" "$(commit-and-tag-version --dry-run)"
-    commit-and-tag-version -s
-    and bumpScripts
-    and git push --follow-tags
-    or false
+set -l next (commit-and-tag-version --dry-run  \
+    | string match -r 'tagging release (v[0-9.]+)' \
+    | tail -n 1)
+
+if test -n "$next"
+    bumpScripts $next
+    and git add src/*.ts
+    and commit-and-tag-version -as
 else
     true
 end
