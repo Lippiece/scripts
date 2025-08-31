@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.1.1...v1.2.0) (2025-08-31)
+
+
+### Features
+
+* **hckr:** add more ignore words ([4a36ad3](https://lipgit.ydns.eu/lippiece/scripts/commit/4a36ad35cb0fd7efc4673180ab2a325a29d69e8b))
+
 ## [1.1.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.1.0...v1.1.1) (2025-08-18)
 
 ## [1.1.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.0.3...v1.1.0) (2025-08-15)
