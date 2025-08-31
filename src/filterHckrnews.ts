@@ -50,7 +50,7 @@ for (const link of stories) {
 
   const text = link.textContent
 
-  if (text && ignorelist.has(text)) {
+  if (text && Array.from(ignorelist).some(word => text.includes(word))) {
     ;(link.closest("li") || link).style.opacity = "0.3"
   }
 }
@@ -58,7 +58,7 @@ for (const link of stories) {
 // Ugly.
 const observer = new MutationObserver(mutations => {
   for (const mutation of mutations) {
-    for (const node of mutation.addedNodes) {
+    for (const node of Array.from(mutation.addedNodes)) {
       if (
         node instanceof HTMLElement &&
         node.matches(".link.story") &&
@@ -66,7 +66,7 @@ const observer = new MutationObserver(mutations => {
       ) {
         const text = node.textContent
 
-        if (text && ignorelist.has(text)) {
+        if (text && Array.from(ignorelist).some(word => text.includes(word))) {
           ;(node.closest("li") || node).style.opacity = "0.3"
         }
       }
