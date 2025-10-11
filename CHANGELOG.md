@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.2](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.3.1...v1.3.2) (2025-10-11)
+
+
+### Bug Fixes
+
+* **gosuslugiskipmax:** don't strip userscript meta comments ([04a102e](https://lipgit.ydns.eu/lippiece/scripts/commit/04a102ed818c2f98fbdbda34ad0bf263cdc723fd))
+
 ## [1.3.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.3.0...v1.3.1) (2025-10-11)
 
 ## [1.3.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.2.1...v1.3.0) (2025-10-11)
