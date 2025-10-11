@@ -1,9 +1,8 @@
 {
-  "$schema": "https://json.schemastore.org/package",
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "name": "scripts",
+  "name"            : "scripts",
   "peerDependencies": {
     "typescript": "^5"
   },
@@ -11,6 +10,6 @@
   "scripts": {
     "build": "bun build --production --outdir dist --entrypoints src/* && sed -i 's#//!#//#' dist/*.js"
   },
-  "type": "module",
+  "type"   : "module",
   "version": "1.2.1"
 }
