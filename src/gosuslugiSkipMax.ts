@@ -3,7 +3,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://esia.gosuslugi.ru/login/*
 // @grant       none
-// @version     v1.3.0
+// @version     v1.3.1
 // @author      -
 // @description 11/10/2025, 12:14:08
 // ==/UserScript==
