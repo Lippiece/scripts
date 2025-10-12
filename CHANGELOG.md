@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.4.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.3.2...v1.4.0) (2025-10-12)
+
+
+### Features
+
+* **scripts:** add invidious dislikes script rewrite ([1349961](https://lipgit.ydns.eu/lippiece/scripts/commit/1349961d48ef81f8348fec4183afbf99923fce52))
+
 ## [1.3.2](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.3.1...v1.3.2) (2025-10-11)
 
 
