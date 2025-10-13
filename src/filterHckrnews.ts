@@ -9,20 +9,24 @@
 const ignorelist = new Set([
   "AI",
   "Amazon",
-  "america",
-  "America",
   "Apple",
   "Biden",
+  "bill",
   "business",
+  "Claude",
   "Court",
   "Elon",
   "Facebook",
   "FBI",
   "Google",
+  "govern",
   "IBM",
   "Intel",
   "Kanye",
+  "law",
+  "Law",
   "LLM",
+  "merica",
   "Meta",
   "Microsoft",
   "Musk",
@@ -31,10 +35,13 @@ const ignorelist = new Set([
   "Nvidia",
   "Oracle",
   "Putin",
+  "rrest",
+  "shoot",
   "SpaceX",
   "Tesla",
   "Trump",
   "Twitter",
+  "US",
   "Yahoo",
   "Zuckerberg",
 ])
@@ -58,7 +65,7 @@ for (const link of stories) {
 // Ugly.
 const observer = new MutationObserver(mutations => {
   for (const mutation of mutations) {
-    for (const node of Array.from(mutation.addedNodes)) {
+    for (const node of mutation.addedNodes) {
       if (
         node instanceof HTMLElement &&
         node.matches(".link.story") &&
