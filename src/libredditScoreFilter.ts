@@ -2,8 +2,7 @@
 //! @name         Libreddit score filter
 //! @version     v1.5.0
 //! @author       lippiece
-//! @match        https://*/watch?*v=*
-//! @match        https://redlib.*.com/r/*
+//! @match        https://redlib.*.*/r/*
 //! @top-level-await
 //! ==/UserScript==
 
