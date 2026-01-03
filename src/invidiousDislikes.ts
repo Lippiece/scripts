@@ -1,6 +1,6 @@
 //! ==UserScript==
 //! @name         Return YouTube Dislike for Invidious
-//! @version     v1.5.0
+//! @version     v1.6.0
 //! @description  Show dislikes for a video on invidious instances (NOT nadeko.net)
 //! @author       dieser-niko
 //! @match        https://*/watch?*v=*
