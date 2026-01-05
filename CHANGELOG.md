@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.6.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.6.0...v1.6.1) (2026-01-05)
+
+
+### Bug Fixes
+
+* **libreddit-filter:** only query elements under `.posts` ([a9f9cb6](https://lipgit.ydns.eu/lippiece/scripts/commit/a9f9cb6ee4c5c613fda5ff211d46743bd419c3d5))
+
 ## [1.6.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.5.0...v1.6.0) (2026-01-03)
 
 
