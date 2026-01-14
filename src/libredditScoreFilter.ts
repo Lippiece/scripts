@@ -6,7 +6,10 @@
 //! @top-level-await
 //! ==/UserScript==
 
-const scoreElements = document.body.querySelectorAll(".posts .post_score")
+const scoreElements = [
+  ...document.body.querySelectorAll(".posts .post_score"),
+  ...document.body.querySelectorAll("#posts .post_score"),
+]
 
 for (const element of scoreElements) {
   if (element instanceof HTMLElement) {
