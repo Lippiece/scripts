@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.7.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.6.2...v1.7.0) (2026-01-22)
+
+
+### Features
+
+* **libreddit-filter:** use score from GM store ([f62b939](https://lipgit.ydns.eu/lippiece/scripts/commit/f62b939e3d3d2c69442018e9bd1dfe3572d569fb))
+
 ## [1.6.2](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.6.1...v1.6.2) (2026-01-14)
 
 
