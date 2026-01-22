@@ -1,10 +1,13 @@
 //! ==UserScript==
 //! @name         Libreddit score filter
-//! @version     v1.6.2
+//! @version      v1.6.2
 //! @author       lippiece
 //! @match        https://redlib.*.*/r/*
+//! @grant GM_getValue
 //! @top-level-await
 //! ==/UserScript==
+
+const minimumScore = await GM_getValue<number>("minimumScore", 300)
 
 const scoreElements = [
   ...document.body.querySelectorAll(".posts .post_score"),
@@ -16,7 +19,7 @@ for (const element of scoreElements) {
     const score         = Number(element.title)
     const isHiddenScore = element.title === "Hidden"
 
-    if (score < 1000 || isHiddenScore) {
+    if (score < minimumScore || isHiddenScore) {
       const postElement = element.closest(".post")
 
       postElement?.remove()
