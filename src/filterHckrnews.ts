@@ -4,7 +4,11 @@
 //! @match       https://hckrnews.com/*
 //! @grant       none
 //! @version     v1.7.0
+//! @grant       GM_getValue
+//! @top-level-await
 //! ==/UserScript==
+
+const userList = await GM_getValue<string[]>("userList", [])
 
 const ignorelist = new Set([
   "AI",
@@ -50,6 +54,7 @@ const ignorelist = new Set([
   "US",
   "Yahoo",
   "Zuckerberg",
+  ...userList,
 ])
 const stories    = document.querySelectorAll(".link.story")
 
