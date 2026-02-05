@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.8.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.7.0...v1.8.0) (2026-02-05)
+
+
+### Features
+
+* **filterHckrnews:** allow appending to ignorelist with GM `userList` value ([2a03f67](https://lipgit.ydns.eu/lippiece/scripts/commit/2a03f67772c21e814b198eb65de160b6538e9ebc))
+
 ## [1.7.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.6.2...v1.7.0) (2026-01-22)
 
 
