@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.8.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.8.0...v1.8.1) (2026-02-14)
+
+
+### Bug Fixes
+
+* **filterHckrnews:** remove erroneous `[@grant](https://lipgit.ydns.eu/grant) none` preventing value access ([808de63](https://lipgit.ydns.eu/lippiece/scripts/commit/808de63c46bb11c9b185554e2444a0d48f14fc12))
+
 ## [1.8.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.7.0...v1.8.0) (2026-02-05)
 
 

@@ -2,7 +2,7 @@
 //! @name        Opinionated hckrnews.com filter
 //! @namespace   Violentmonkey Scripts
 //! @match       https://hckrnews.com/*
-//! @version     v1.8.0
+//! @version     v1.8.1
 //! @grant       GM_getValue
 //! @top-level-await
 //! ==/UserScript==
@@ -68,7 +68,7 @@ for (const link of stories) {
   const text = link.textContent
 
   if (text && Array.from(ignorelist).some(word => text.includes(word))) {
-    ;(link.closest("li") || link).style.opacity = "0.3"
+    ;(link.closest("li") ?? link).style.opacity = "0.3"
   }
 }
 
@@ -84,7 +84,7 @@ const observer = new MutationObserver(mutations => {
         const text = node.textContent
 
         if (text && Array.from(ignorelist).some(word => text.includes(word))) {
-          ;(node.closest("li") || node).style.opacity = "0.3"
+          ;(node.closest("li") ?? node).style.opacity = "0.3"
         }
       }
     }
