@@ -1,6 +1,6 @@
 //! ==UserScript==
 //! @name        Set Wikipedia skin to `vector-2022`
-//! @match       https://*.wikipedia.org/*
+//! @match       https://*.wikipedia.org/wiki/*
 //! @icon        https://wikipedia.org/static/favicon/wikipedia.ico
 //! @grant       none
 //! @version     v1.9.2
