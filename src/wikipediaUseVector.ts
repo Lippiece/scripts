@@ -3,7 +3,7 @@
 //! @match       https://*.wikipedia.org/*
 //! @icon        https://wikipedia.org/static/favicon/wikipedia.ico
 //! @grant       none
-//! @version     v1.9.0
+//! @version     v1.9.1
 //! @author      lippiece
 //! ==/UserScript==
 
