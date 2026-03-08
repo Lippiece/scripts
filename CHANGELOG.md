@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.9.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.8.1...v1.9.0) (2026-03-08)
+
+
+### Features
+
+* **wikipediaUseVector:** add script to set wikipedia's skin to `vector-2022` ([1e37879](https://lipgit.ydns.eu/lippiece/scripts/commit/1e37879d99059bb8fd81b7d0cf8e0c48e0e11748))
+
 ## [1.8.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.8.0...v1.8.1) (2026-02-14)
 
 
