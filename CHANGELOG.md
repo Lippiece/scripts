@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.9.3](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.9.2...v1.9.3) (2026-03-08)
+
+
+### Bug Fixes
+
+* **wikipediaUseVector:** set `match` to `/wiki` subpath ([6f6606b](https://lipgit.ydns.eu/lippiece/scripts/commit/6f6606b29a1d674e22ea0e0dc5a2284680681b0a))
+
 ## [1.9.2](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.9.1...v1.9.2) (2026-03-08)
 
 ## [1.9.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.9.0...v1.9.1) (2026-03-08)
