@@ -11,5 +11,5 @@
     "build": "bun build --production --outdir dist --entrypoints src/* && sed -i 's#//!#//#' dist/*.js"
   },
   "type": "module",
-  "version": "1.9.1"
+  "version": "1.9.2"
 }
