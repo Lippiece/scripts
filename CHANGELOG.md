@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.10.1](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.10.0...v1.10.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* **filterHckrnews:** also apply font change to initial parse ([ac6a47d](https://lipgit.ydns.eu/lippiece/scripts/commit/ac6a47def9978e42535a1bcc7d6b1f645099ce33))
+
 ## [1.10.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.9.3...v1.10.0) (2026-04-13)
 
 

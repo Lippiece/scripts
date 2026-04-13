@@ -1,6 +1,6 @@
 //! ==UserScript==
 //! @name         Libreddit score filter
-//! @version     v1.10.0
+//! @version     v1.10.1
 //! @author       lippiece
 //! @match        https://redlib.*.*/r/*
 //! @grant GM_getValue
