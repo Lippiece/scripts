@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.10.0](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.9.3...v1.10.0) (2026-04-13)
+
+
+### Features
+
+* **filterHckrnews:** also reduce font size of the filtered items ([4faaafc](https://lipgit.ydns.eu/lippiece/scripts/commit/4faaafc306e138259383978739eb0472e3f20308))
+
 ## [1.9.3](https://lipgit.ydns.eu/lippiece/scripts/compare/v1.9.2...v1.9.3) (2026-03-08)
 
 
