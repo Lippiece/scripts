@@ -67,7 +67,7 @@ for (const link of stories) {
 
   const text = link.textContent
 
-  if (text && Array.from(ignorelist).some(word => text.includes(word))) {
+  if (text && [...ignorelist].some(word => text.includes(word))) {
     ;(link.closest("li") ?? link).style.opacity = "0.3"
   }
 }
@@ -83,8 +83,9 @@ const observer = new MutationObserver(mutations => {
       ) {
         const text = node.textContent
 
-        if (text && Array.from(ignorelist).some(word => text.includes(word))) {
+        if (text && [...ignorelist].some(word => text.includes(word))) {
           ;(node.closest("li") ?? node).style.opacity = "0.3"
+          ;(node.closest("li") ?? node).style.fontSize = "12px"
         }
       }
     }
