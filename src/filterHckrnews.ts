@@ -69,6 +69,7 @@ for (const link of stories) {
 
   if (text && [...ignorelist].some(word => text.includes(word))) {
     ;(link.closest("li") ?? link).style.opacity = "0.3"
+    ;(link.closest("li") ?? link).style.fontSize = "12px"
   }
 }
 
