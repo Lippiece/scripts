@@ -4,11 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rolldown src/* -d dist -m && sed -i 's#//!#//#' dist/*.js"
+    "build": "rolldown src/* -d dist -m && sed -i 's#//!#//#' dist/*.js",
+    "lint": "tsc"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "rolldown": "^1.2.1"
+    "rolldown": "^1.2.1",
+    "typescript": "^7.0.2"
   },
   "peerDependencies": {
     "typescript": "^5"
