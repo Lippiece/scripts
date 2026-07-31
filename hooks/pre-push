@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+deno check and
+
 function bumpScripts --argument versionName
     sed -E -i "s#@version.+#@version     $versionName#" src/*.ts
 end
