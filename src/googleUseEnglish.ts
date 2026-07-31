@@ -2,7 +2,7 @@
 //! @name        Forces Google sites to use English through search parameter
 //! @namespace   Violentmonkey Scripts
 //! @match       https://*.google.com/*
-//! @version     v1.10.3
+//! @version     v1.10.4
 //! @grant       GM_getValue
 //! @top-level-await
 //! ==/UserScript==
