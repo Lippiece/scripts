@@ -1,1 +1,2 @@
-declare const GM_getValue: <T>(key: string, defaultValue?: any) => Promise<T>
+type Key = "userList" | "exceptions"
+declare const GM_getValue: <T>(key: Key, defaultValue?: any) => Promise<T>
