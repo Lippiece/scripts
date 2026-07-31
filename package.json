@@ -1,15 +1,16 @@
 {
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
   "name": "scripts",
+  "version": "1.10.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rolldown src/* -d dist -m && sed -i 's#//!#//#' dist/*.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "rolldown": "^1.2.1"
+  },
   "peerDependencies": {
     "typescript": "^5"
-  },
-  "private": true,
-  "scripts": {
-    "build": "bun build --production --outdir dist --entrypoints src/* && sed -i 's#//!#//#' dist/*.js"
-  },
-  "type": "module",
-  "version": "1.10.2"
+  }
 }
