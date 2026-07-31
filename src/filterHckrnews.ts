@@ -2,7 +2,7 @@
 //! @name        Opinionated hckrnews.com filter
 //! @namespace   Violentmonkey Scripts
 //! @match       https://hckrnews.com/*
-//! @version     v1.10.2
+//! @version     v1.10.3
 //! @grant       GM_getValue
 //! @top-level-await
 //! ==/UserScript==
