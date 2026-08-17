@@ -2,18 +2,18 @@
 
 deno task lint
 
-function bumpScripts --argument versionName
-    sed -E -i "s#@version.+#@version     $versionName#" src/*.ts
-end
-
-set -l next (commit-and-tag-version --dry-run  \
-    | string match -r 'tagging release (v[0-9.]+)' \
-    | tail -n 1)
-
-if test -n "$next"
-    bumpScripts $next
-    and git add src/*.ts
-    and commit-and-tag-version -as
-else
-    true
-end
+# function bumpScripts --argument versionName
+#     sed -E -i "s#@version.+#@version     $versionName#" src/*.ts
+# end
+#
+# set -l next (commit-and-tag-version --dry-run  \
+#     | string match -r 'tagging release (v[0-9.]+)' \
+#     | tail -n 1)
+#
+# if test -n "$next"
+#     bumpScripts $next
+#     and git add src/*.ts
+#     and commit-and-tag-version -as
+# else
+#     true
+# end

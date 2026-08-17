@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.10.6](https://lipgit.lippiece.ru/lippiece/scripts/compare/v1.10.5...v1.10.6) (2026-08-17)
 ## [1.10.5](https://lipgit.lippiece.ru/lippiece/scripts/compare/v1.10.1...v1.10.5) (2026-07-31)
 ## [1.10.4](https://lipgit.lippiece.ru/lippiece/scripts/compare/v1.10.1...v1.10.4) (2026-07-31)
 ## [1.10.3](https://lipgit.lippiece.ru/lippiece/scripts/compare/v1.10.1...v1.10.3) (2026-07-31)

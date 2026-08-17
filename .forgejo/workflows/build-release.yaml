@@ -6,12 +6,13 @@ jobs:
   build:
     runs-on: docker
     container:
-      image: docker.io/denoland/deno:latest
+      image: docker.io/denoland/deno:alpine
     steps:
-      - uses: actions/checkout@v4
+      - run: apk add nodejs npm sed bash jq curl
+      - uses: actions/checkout@v6
       - run: deno ci --prod --skip-types
-      - run: deno run build
-      - uses: actions/forgejo-release@v2.11.3
+      - run: npm run build
+      - uses: actions/forgejo-release@v2
         with:
           direction: upload
           release-dir: dist
