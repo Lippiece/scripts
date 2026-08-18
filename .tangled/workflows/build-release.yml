@@ -20,7 +20,7 @@ steps:
       set -euo pipefail
 
       # change this if you're not on `tngl.sh`
-      PDS="https://tangled.lippiece.cc"
+      PDS="https://eurosky.social"
       # also update this to your handle or did
       ATP_IDENTIFIER="just-give-me-image.eurosky.social"
       ARTIFACT_PATH="dist"
