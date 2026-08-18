@@ -10,6 +10,8 @@ dependencies:
     - curl
     - nodejs-slim
     - gnused
+    - jq
+    - coreutils
 environment:
   HTTPS_PROXY: "socks5://host.containers.internal:2334"
 steps:
