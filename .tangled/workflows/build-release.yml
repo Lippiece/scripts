@@ -13,7 +13,7 @@ environment:
   HTTPS_PROXY: "socks5://host.containers.internal:2334"
 steps:
   - command: deno ci --prod --skip-types
-  - command: npm run build
+  - command: deno task build
   - name: "Publish artifact record"
     command: |
       set -euo pipefail
