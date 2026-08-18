@@ -3,12 +3,14 @@ when:
       - "push"
     tag:
       - "v*"
-engine: "nixery"
+engine: microvm
+image: nixos
+registry:
+  nixpkgs: github:nixos/nixpkgs/nixos-unstable
 dependencies:
-  nixpkgs/nixpkgs-unstable:
-    - deno
-    - nodejs-slim
-    - gnused
+  - deno
+  - nodejs-slim
+  - gnused
 steps:
   - command: deno ci --prod --skip-types
   - command: npm run build
